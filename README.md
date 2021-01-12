@@ -78,7 +78,7 @@ You can give the faces a corresponding name. By using a hash, you can associate 
 ![output image]( https://qengineering.eu/images/Strangers3.jpg )<br/><br/>
 By the way, note the warp perspective of Graham Norton's face that we added via a command-line argument and the crop of the same photo already saved in the database. This is done by the ArcFace algorithms.
 
-The blur filter prevents vague or imprecise faces from being added to the database. Below you see a few examples of faces we encounter in the database when de blur filter was switched off.<br/><br/>
+The **blur filter** prevents vague or imprecise faces from being added to the database. Below you see a few examples of faces we encounter in the database when de blur filter was switched off.<br/><br/>
 ![output image]( https://qengineering.eu/images/Strangers4.jpg )<br/><br/>
 Another safety measure is the orientation of the face. Only faces in front of the camera are added to the database. Faces "in profile" are often inaccurate in large databases.<br/>
 
