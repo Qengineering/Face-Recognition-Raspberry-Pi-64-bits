@@ -57,32 +57,28 @@ Norton_2.mp4 (movie to check)<br/>
 ------------
 
 ### Running the app.
-To run the application load the project file FaceRecognition.cbp in Code::Blocks. 
-First, we are going to fill the database with new faces. The database *img*  initial holds one face, Graham.jpg. 
-![output image]( https://qengineering.eu/images/Strangers1.png )<br/>
+To run the application load the project file FaceRecognition.cbp in Code::Blocks.<br/> 
+First, we are going to fill the database with new faces. The database *img*  initial holds one face, Graham.jpg.<br/><br/>
+![output image]( https://qengineering.eu/images/Strangers1.png )<br/><br/>
 Check in main.cpp line 253. It must be `cv::VideoCapture cap("Norton_A.mp4");` <br/>
 
-Compile and run the app. Movie *Norton_A.mp4* will be played and new faces are stored in the database. In the end, you have the database filled as below.
+Compile and run the app. Movie *Norton_A.mp4* will be played and new faces are stored in the database. In the end, you have the database filled as below.<br/><br/>
 ![output image]( https://qengineering.eu/images/Strangers2.png )<br/>
 
 Next, alter the name of the movie in line 253 of main.cpp to *Norton_2.mpg*.
-Compile and run the application again. You will see that all the faces are correctly recognized. It can still happen that faces are added to the database due to strange angles or grimaces. <br/>
-
+Compile and run the application again. You will see that all the faces are correctly recognized. It can still happen that faces are added to the database due to strange angles or grimaces.<br/>
 ------------
-
 ### Database.
 The application can easily contain more than 2000 faces. There are reports that ArcFace works flawlessly with over 5000 faces. With large databases, it is important to keep your face "natural". It means a front view photo with eyes open and mouth closed without a smile.<br/>
 The database is filled "on the fly", as you have seen above. It is also possible to manually add a face to the databases. To do this, run the application from the command-line and enter the name of the image as an argument. For example `./FaceRecognition "Graham Norton.jpg"` Note the quotation marks around the name if it has a space.
 
-You can give the faces a corresponding name. By using a hash, you can associate multiple pictures with the same name.
-
-![output image]( https://qengineering.eu/images/Strangers3.jpg )<br/>
-
+You can give the faces a corresponding name. By using a hash, you can associate multiple pictures with the same name.<br/>
+![output image]( https://qengineering.eu/images/Strangers3.jpg )<br/><br/>
 By the way, note the warp perspective of Graham Norton's face that we added via a command-line argument and the crop of the same photo already saved in the database. This is done by the ArcFace algorithms.
 
-The blur filter prevents vague or imprecise faces from being added to the database. Below you see a few examples of faces we encounter in the database when de blur filter was switched off.
-![output image]( https://qengineering.eu/images/Strangers4.jpg )<br/>
-Another safety measure is the orientation of the face. Only faces in front of the camera are added to the database. Faces "in profile" are often inaccurate in large databases.
+The blur filter prevents vague or imprecise faces from being added to the database. Below you see a few examples of faces we encounter in the database when de blur filter was switched off.<br/>
+![output image]( https://qengineering.eu/images/Strangers4.jpg )<br/><br/>
+Another safety measure is the orientation of the face. Only faces in front of the camera are added to the database. Faces "in profile" are often inaccurate in large databases.<br/>
 
 ------------
 
