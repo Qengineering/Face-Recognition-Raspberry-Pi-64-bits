@@ -2,7 +2,7 @@
 ![output image]( https://qengineering.eu/images/Face.jpg )
 
 ## A fast face recognition and face recording running on bare a Raspberry Pi 4.
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)<br/><br/>
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)<br/>
 
 This C++ application recognizes a person from a database of more than 2000 faces.  It is built for a Raspberry PI 4, but can easily be ported to other platforms.
 
@@ -97,7 +97,7 @@ In main .cpp at line 21 you see a few defines.
 #define SHOW_LEGEND
 #define SHOW_LANDMARKS
 ```
-By commenting the line the define is switched off. For instance, if you do not want to incorporate the live test (still another 37 mS), comment this line. The MtCNN face detection is switched on by turning RETINA off.<br/>
+By commenting the line the define is switched off. For instance, if you do not want to incorporate the **anti-spoofing** test (saves you 37 mS), comment this line. The MtCNN face detection is switched on by turning RETINA off.<br/>
 Another important point is that only one face is labelled. It is no problem to loop through all faces. However, they are usually too small to be recognized with great accuracy. Besides, your FPS will drop also.
 Note, the input image for the RetinaFace is 324 x 240 pixels. Larger pictures are resized to that format. ArcFace works with an input of 112 x 112 pixels. 
 If you have a large input format, you could extract the faces at a larger scale from this image, once you have the coordinates from the RetinaFace network. Now, faces are to be recognized with much greater accuracy. Of course, there will be not much of an FPS left.
