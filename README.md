@@ -71,7 +71,7 @@ Compile and run the application again. You will see that all the faces are corre
 ------------
 
 ### Database.
-The application can easily contain more than 2000 faces. There are reports that ArcFace works flawlessly with over 5000 faces. With large databases, it is important to keep your face "natural". It means a front view photo with eyes open and mouth closed without a smile.<br/>
+The application can easily contain more than 2000 faces. There are reports that ArcFace works flawlessly with over 5000 faces. With large databases, it is important to keep your face "natural". It means a front view photo with eyes open and mouth closed without a smile or other funny faces.<br/>
 The database is filled "on the fly", as you have seen above. It is also possible to manually add a face to the databases. To do this, run the application from the command-line and enter the name of the image as an argument. For example `./FaceRecognition "Graham Norton.jpg"` Note the quotation marks around the name if it has a space.
 
 You can give the faces a corresponding name. By using a hash, you can associate multiple pictures with the same name.<br/><br/>
