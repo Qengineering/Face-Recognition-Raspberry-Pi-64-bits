@@ -63,11 +63,13 @@ First, we are going to fill the database with new faces. The database *img*  ini
 Check in main.cpp line 253. It must be `cv::VideoCapture cap("Norton_A.mp4");` <br/>
 
 Compile and run the app. Movie *Norton_A.mp4* will be played and new faces are stored in the database. In the end, you have the database filled as below.<br/><br/>
-![output image]( https://qengineering.eu/images/Strangers2.png )<br/>
+![output image]( https://qengineering.eu/images/Strangers2.png )<br/><br/>
 
 Next, alter the name of the movie in line 253 of main.cpp to *Norton_2.mpg*.
 Compile and run the application again. You will see that all the faces are correctly recognized. It can still happen that faces are added to the database due to strange angles or grimaces.<br/>
+
 ------------
+
 ### Database.
 The application can easily contain more than 2000 faces. There are reports that ArcFace works flawlessly with over 5000 faces. With large databases, it is important to keep your face "natural". It means a front view photo with eyes open and mouth closed without a smile.<br/>
 The database is filled "on the fly", as you have seen above. It is also possible to manually add a face to the databases. To do this, run the application from the command-line and enter the name of the image as an argument. For example `./FaceRecognition "Graham Norton.jpg"` Note the quotation marks around the name if it has a space.
@@ -104,10 +106,10 @@ If you have a large input format, you could extract the faces at a larger scale 
 
 
 ### RaspiCam.
-If you want to use a camera please alter line 253 in main.cpp to
-`cv::VideoCapture cap(0);                          //RaspiCam`
-If you want to run a movie please alter line 253 in main.cpp to
-`cv::VideoCapture cap("Norton_A.mp4");   //Movie`
+If you want to use a camera please alter line 253 in main.cpp to<br/>
+`cv::VideoCapture cap(0);                          //RaspiCam`<br/>
+If you want to run a movie please alter line 253 in main.cpp to<br/>
+`cv::VideoCapture cap("Norton_A.mp4");   //Movie`<br/>
 
 ------------
 
