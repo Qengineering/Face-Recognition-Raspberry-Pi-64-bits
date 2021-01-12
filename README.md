@@ -122,6 +122,8 @@ If you want to run a movie please alter line 253 in main.cpp to<br/>
 ------------
 
 #### Thanks.
+https://github.com/Tencent/ncnn<br/>
+https://github.com/nihui<br/>
 https://github.com/LicheeX/MTCNN-NCNN<br/>
 https://github.com/XinghaoChen9/LiveFaceReco_RaspberryPi<br/>
 https://github.com/deepinsight/insightface<br/>
