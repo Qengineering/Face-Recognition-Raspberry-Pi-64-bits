@@ -9,7 +9,8 @@ protected:
 public:
     TFace();
     virtual ~TFace();
-    void Process(std::vector<FaceObject> Faces);
+    void Process(std::vector<FaceObject> Faces)
+        
 };
 //----------------------------------------------------------------------------------------
 #endif // TFACE_H
