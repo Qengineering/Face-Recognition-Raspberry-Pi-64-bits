@@ -238,12 +238,13 @@ int main(int argc, char **argv)
             faces = cv::imread(NameFaces[i]);
             fc1.push_back(ArcFace.GetFeature(faces));
             //get a proper name
-            cv::String &Str = NameFaces[i];
+            string Str = NameFaces[i];
             n   = Str.rfind('/');
             Str = Str.erase(0,n+1);
             n   = Str.find('#');
             if(n>0) Str = Str.erase(n,Str.length()-1);                //remove # some numbers.jpg
             else    Str = Str.erase(Str.length()-4, Str.length()-1);  //remove .jpg
+	    NameFaces[i]=Str;
             if(FaceCnt>1) printf("\rloading: %.2lf%% ",(i*100.0)/(FaceCnt-1));
         }
         cout << "" << endl;
