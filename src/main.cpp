@@ -1,4 +1,6 @@
 #include <iostream>
+#include <chrono>
+#include <string>
 #include <opencv2/opencv.hpp>
 #include "TMtCNN.h"
 #include "TArcface.h"
@@ -209,7 +211,7 @@ int main(int argc, char **argv)
                 //get centre aligned image
                 cv::Mat aligned = Warp.Process(result_cnn,Faces[0]);
 
-                cv::String Str = imagepath;
+                string Str = imagepath;
                 n   = Str.rfind('/');
                 Str = Str.erase(0,n+1);
                 Str = Str.erase(Str.length()-4, Str.length()-1);  //remove .jpg
