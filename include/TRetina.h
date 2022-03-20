@@ -15,12 +15,12 @@ struct FaceObject
 {
     cv::Rect_<float> rect;
     cv::Point2f landmark[5];
-    int NameIndex;
-    float FaceProb;
-    double NameProb;
-    double LiveProb;
-    double Angle;
-    int Color;      //background color of label on screen
+    int NameIndex {-1};
+    float FaceProb {0.0};
+    double NameProb {0.0};
+    double LiveProb {0.0};
+    double Angle {0.0};
+    int Color {0};      //background color of label on screen
 };
 //----------------------------------------------------------------------------------------
 class TRetina
