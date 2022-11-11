@@ -72,7 +72,7 @@ Compile and run the application again. You will see that all the faces are corre
 ------------
 
 ## CMake.
-Instead of Code::Blocks you can now use CMake to build the application.<br/>
+Instead of Code::Blocks, you can now use CMake to build the application.<br/>
 Please follow the instructions at [#12](https://github.com/Qengineering/Face-Recognition-Raspberry-Pi-64-bits/issues/12)
 
 ------------
